@@ -1,24 +1,22 @@
-# README
+# Rails Hello OpenAPI
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A quick "Hello World" but for generating OpenAPI, using the Ruby on Rails extension [RSwag](https://github.com/rswag/rswag/).
 
-Things you may want to cover:
+This repository was built as sample code for the Bump.sh guide on [Generating OpenAPI docs for Ruby on Rails with RSwag](https://docs.bump.sh/guides/openapi/code-first-rails/).
 
-* Ruby version
+## Usage
 
-* System dependencies
+Clone the repository down to give it a try.
 
-* Configuration
+```
+# Set everything up
+$ bundle install
 
-* Database creation
+# Export the OpenAPI
+$ rake rswag
 
-* Database initialization
+# Take a look at the generated OpenAPI
+cat swagger/api/swagger.yaml
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Preview how the API reference docs look [on Bump.sh](https://bump.sh/bump-examples/hub/code-samples/doc/rails-hello-openapi).
